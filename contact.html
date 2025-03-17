@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | El Sapito Taquizas Y Aguachiles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Navigation -->
+    <nav class="bg-sky-900 p-6 text-white flex justify-between items-center">
+        <h1 class="text-xl font-bold">El Sapito Taquizas Y Aguachiles</h1>
+        <a href="index.html" class="hover:underline">Home</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="max-w-4xl mx-auto bg-white p-8 mt-10 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-center text-gray-800">Contactanos</h2>
+        <p class="text-center text-gray-600 mt-2">Rellene el siguiente formulario</p>
+
+        <!-- Contact Form -->
+        <form action="https://formsubmit.co/issac@elsapitotaquizasyaguachiles.com" class="mt-6 space-y-4">
+            <div>
+                <label class="block text-gray-700 font-medium">Nombre</label>
+                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500">
+            </div>
+            <div>
+                <label class="block text-gray-700 font-medium">Correo</label>
+                <input type="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500">
+            </div>
+            <div>
+                <label class="block text-gray-700 font-medium">Mensaje</label>
+                <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-sky-900 text-white py-3 rounded-lg hover:bg-sky-700 transition">
+                Mandar Mensaje
+            </button>
+        </form>
+    </section>
+
+    <!-- Business Info -->
+    <section class="max-w-4xl mx-auto mt-10 text-center">
+        <h3 class="text-lg font-semibold text-gray-800">Visit Us</h3>
+        <p class="text-gray-600">Fort Worth, Texas</p>
+        <p class="text-gray-600">
+            Phone: <a href="tel:+16822277374" class="text-gray-600 hover:text-blue-500">(682) 227-7374</a>
+        </p>
+        <p class="text-gray-600">Email: issac@elsapitotaquizasyaguachiles.com
+        </p>
+    </section>
+
+    <!-- Google Maps (Fort Worth, TX) -->
+    <div class="max-w-4xl mx-auto mt-6">
+        <iframe 
+            class="w-full h-64 rounded-lg shadow-md"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53628.98762526844!2d-97.3474959440315!3d32.75548829595037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6e4beace6f7f%3A0x119a0d43e084b04e!2sFort%20Worth%2C%20TX!5e0!3m2!1sen!2sus!4v1710700000000!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-4 mt-10">
+        &copy; <span id="year"></span> El Sapito Taquizas Y Aguachiles. All rights reserved.
+    </footer>
+
+    <script>
+        // Auto-update copyright year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
